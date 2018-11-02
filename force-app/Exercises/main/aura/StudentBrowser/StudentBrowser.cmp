@@ -1,8 +1,13 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
-	<c:StudentBrowserForm />
+
+	<div class="slds-m-bottom_small">
+		<c:StudentBrowserForm />
+	</div>
+
 	<lightning:tabset variant="scoped">
 		<lightning:tab label="Gallery">
 			Photo gallery of students goes here
 		</lightning:tab>
 	</lightning:tabset>
+
 </aura:component>
