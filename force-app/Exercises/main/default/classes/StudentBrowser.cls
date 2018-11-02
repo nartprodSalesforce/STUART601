@@ -13,7 +13,6 @@ public with sharing class StudentBrowser {
 
         query = query + ' order by Name';
 
-		System.debug(query);
         List<Contact> sobjList = Database.query(query);
         return sobjList;
 
