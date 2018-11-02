@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Student was chosen by the user">
+    <aura:attribute name="contactId" type="String"/>
+</aura:event>

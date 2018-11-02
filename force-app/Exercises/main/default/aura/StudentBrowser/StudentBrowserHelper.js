@@ -13,5 +13,12 @@
 				courseDeliveryId: courseDeliveryId
 			}
 		);
+	},
+	broadcastStudentSelected: function (component) {
+		var appEvent = $A.get('e.c:AwInstructorsStudentSelected');
+		appEvent.setParams({
+			contactId: component.get('v.selectedContactId')
+		});
+		appEvent.fire();
 	}
 })

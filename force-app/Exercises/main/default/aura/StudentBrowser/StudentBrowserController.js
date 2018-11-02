@@ -9,8 +9,8 @@
 		helper.queryStudents(component, helper, instructorId, courseDeliveryId);
 	},
 	onStudentSelected: function (component, event, helper) {
-		debugger;
 		var contactId = event.getParam('contactId');
 		component.set('v.selectedContactId', contactId);
+		helper.broadcastStudentSelected(component);
 	}
 })
